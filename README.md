@@ -8,4 +8,6 @@ I then log that temperature data to a MySQL database, and using a Node.js server
 
 You can watch [this video](https://www.youtube.com/watch?v=wjFFyl02oSk) to see it in action!
 
-You will have to modify the sensor.py and server.js files with your database credentials. I'll try to include a package.json and requirements.txt file to make this easier to run and get set up.
+You will have to modify the sensor.py and server.js files with your database credentials. 
+
+**This Github repo does not include the Prowl push notification part of the app and it also doesn't include a package.json and requirements.txt file to easily get the project setup up. This was first node.js app and I was noob.**
