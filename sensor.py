@@ -71,40 +71,10 @@ def displayImageStatus(img, status, positionX, positionY):
 	disp.image(image)
 	disp.display()
 
-# Send a push notification to phone via Prowl.
-def pushNotification():
-	# Push notifications every hour.
-	t = threading.Timer(30, pushNotification)
-	t.daemon = True
-	t.start()
-
-	# Get temperature data.
-	humidity, celsius = Adafruit_DHT.read(DHT_TYPE, DHT_PIN)
-	fahrenheit = (float(0 if celsius is None else celsius) * 1.8) + 32
-	urlParams = {'tempC': '{0:0.1f}'.format(celsius), 'tempF': '{0:0.1f}'.format(fahrenheit), 'humidity': '{0:0.1f}'.format(humidity)}
-
-	# Skip to the next reading if a valid measurement couldn't be taken.
-	if humidity is None or celsius is None or fahrenheit is None:
-		time.sleep(10)
-		r = requests.get('http://yourBeagleBoneIP/beaglebone/push.php', params=urlParams)
-		print '---------------------------------'
-		print 'Push notification URL:', r.url
-		print 'Push notification Status Code:', r.status_code
-	else:
-		r = requests.get('http://yourBeagleBoneIP/beaglebone/push.php', params=urlParams)
-		print '---------------------------------'
-		print 'Push notification URL:', r.url
-		print 'Push notification Status Code:', r.status_code
-
-
-print 'Press Ctrl-C to quit.'
-
 # Display welcome image.
 displayImageStatus('lcd/bbb.png', 'Hello Person!', 14, 37)
 
 time.sleep(5)
-
-pushNotification()
 
 while True:
 	# Get temperature data.
