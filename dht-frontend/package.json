@@ -1,0 +1,91 @@
+{
+  "name": "dht-frontend",
+  "private": true,
+  "version": "2.0.0",
+  "description": "Beaglebone Black DHT22 temperature sensor app",
+  "keywords": [],
+  "dependencies": {
+    "browser-sync": "^2.10.0",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-cache": "^0.4.1",
+    "gulp-changed": "^1.3.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-if": "^2.0.0",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-jshint": "^2.0.0",
+    "gulp-linker": "^0.1.7",
+    "gulp-load-plugins": "^1.1.0",
+    "gulp-minify-css": "^1.2.3",
+    "gulp-notify": "^2.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-rimraf": "^0.2.0",
+    "gulp-sass": "^2.1.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-typescript": "^2.9.2",
+    "gulp-uglify": "^1.5.1",
+    "gulp-util": "^3.0.7",
+    "include-all": "~0.1.3",
+    "machinepack-sailsgulpify": "^1.0.1",
+    "rc": "~0.5.0",
+    "rimraf": "^2.5.0",
+    "run-sequence": "^1.1.5",
+    "sails": "~0.11.3"
+  },
+  "scripts": {
+    "debug": "node debug app.js",
+    "start": "node app.js"
+  },
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ChadLefort/dht22"
+  },
+  "author": "Chad Lefort",
+  "license": "MIT License",
+  "bugs": {
+    "url": "https://github.com/ChadLefort/dht22/issues"
+  },
+  "jspm": {
+    "configFile": "jspm.config.js",
+    "dependencies": {
+      "angular": "npm:angular@^1.4.8",
+      "css": "github:systemjs/plugin-css@^0.1.20",
+      "erikflowers/weather-icons": "github:erikflowers/weather-icons@^2.0.10",
+      "highcharts/highcharts-release": "github:highcharts/highcharts-dist@^4.2.1",
+      "janpantel/angular-sails": "github:janpantel/angular-sails@^1.1.4",
+      "jquery": "npm:jquery@^2.2.0",
+      "lodash": "npm:lodash@^4.0.0",
+      "moment": "npm:moment@^2.11.1",
+      "pablojim/highcharts-ng": "github:pablojim/highcharts-ng@^0.0.11",
+      "sails.io.js": "github:balderdashy/sails.io.js@0.12.0",
+      "toastr": "npm:toastr@^2.1.2",
+      "twbs/bootstrap": "github:twbs/bootstrap@4.0.0-alpha.2",
+      "ui-router": "npm:ui-router@^0.2.15"
+    },
+    "devDependencies": {
+      "typescript": "npm:typescript@^1.6.2"
+    },
+    "overrides": {
+      "github:highcharts/highcharts-dist@4.2.1": {
+        "main": "highcharts",
+        "shim": {
+          "highcharts": {
+            "deps": [
+              "./adapters/standalone-framework"
+            ],
+            "exports": "Highcharts"
+          }
+        }
+      },
+      "github:balderdashy/sails.io.js@0.12.0": {
+        "main": "dist/sails.io.js",
+        "format": "global"
+      },
+      "npm:moment@2.11.1": {
+        "main": "moment.js",
+        "format": "global"
+      }
+    }
+  }
+}

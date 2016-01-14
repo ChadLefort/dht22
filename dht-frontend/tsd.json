@@ -1,0 +1,36 @@
+{
+  "version": "v4",
+  "repo": "borisyankov/DefinitelyTyped",
+  "ref": "master",
+  "path": "typings",
+  "bundle": "typings/tsd.d.ts",
+  "installed": {
+    "angularjs/angular.d.ts": {
+      "commit": "b4646ff708f39d2896bcb3e3974667f92e26c5a4"
+    },
+    "jquery/jquery.d.ts": {
+      "commit": "1984ea435fe9e93a012d50db7773db58ae5d494b"
+    },
+    "angular-ui-router/angular-ui-router.d.ts": {
+      "commit": "fe563dff3428bac1260d1794e2c2ecf8f097535a"
+    },
+    "highcharts/highcharts.d.ts": {
+      "commit": "6eebd5e90a1cbd6b47b0705ba72dbcd5baf846f3"
+    },
+    "moment/moment.d.ts": {
+      "commit": "6eebd5e90a1cbd6b47b0705ba72dbcd5baf846f3"
+    },
+    "moment/moment-node.d.ts": {
+      "commit": "6eebd5e90a1cbd6b47b0705ba72dbcd5baf846f3"
+    },
+    "lodash/lodash.d.ts": {
+      "commit": "6eebd5e90a1cbd6b47b0705ba72dbcd5baf846f3"
+    },
+    "highcharts-ng/highcharts-ng.d.ts": {
+      "commit": "6eebd5e90a1cbd6b47b0705ba72dbcd5baf846f3"
+    },
+    "toastr/toastr.d.ts": {
+      "commit": "1984ea435fe9e93a012d50db7773db58ae5d494b"
+    }
+  }
+}

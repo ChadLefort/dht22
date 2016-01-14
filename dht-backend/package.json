@@ -1,0 +1,29 @@
+{
+  "name": "dht-backend",
+  "private": true,
+  "version": "2.0.0",
+  "description": "Beaglebone Black DHT22 temperature sensor app",
+  "keywords": [],
+  "dependencies": {
+    "include-all": "~0.1.3",
+    "lodash": "^3.10.1",
+    "rc": "~0.5.0",
+    "sails": "~0.11.3",
+    "sails-mysql": "^0.11.2",
+    "beaglebone-dht": "^0.0.3"
+  },
+  "scripts": {
+    "debug": "node debug app.js",
+    "start": "node app.js"
+  },
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ChadLefort/dht22"
+  },
+  "author": "Chad Lefort",
+  "license": "MIT License",
+  "bugs": {
+    "url": "https://github.com/ChadLefort/dht22/issues"
+  }
+}

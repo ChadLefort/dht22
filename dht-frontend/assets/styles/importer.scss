@@ -1,0 +1,17 @@
+body {
+  padding: 80px 40px 0 40px;
+  background-color: #29516D;
+}
+
+#toast-container > div {
+    box-shadow: none;
+    opacity: 1;
+}
+
+#toast-container >:hover {
+    box-shadow: none;
+}
+
+.toast-top-center {
+    top: 20px;
+}

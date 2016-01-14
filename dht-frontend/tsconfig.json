@@ -1,0 +1,43 @@
+{
+    "compilerOptions": {
+        "target": "ES5",
+        "module": "system",
+        "moduleResolution": "classic",
+        "declaration": false,
+        "noImplicitAny": false,
+        "removeComments": true,
+        "noResolve": true,
+        "noLib": false,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "suppressExcessPropertyErrors": true
+    },
+    "filesGlob": [
+        "**/*.ts",
+        "**/*.tsx",
+        "!node_modules/**",
+        "!jspm_packages/**"
+    ],
+    "compileOnSave": false,
+    "atom": {
+        "rewriteTsconfig": true
+    },
+    "files": [
+        "assets/app/controllers/dht.ts",
+        "assets/app/dht-module.ts",
+        "assets/app/dht-route.ts",
+        "assets/app/models/dht-model.ts",
+        "assets/app/services/dht-service.ts",
+        "typings/angular-ui-router/angular-ui-router.d.ts",
+        "typings/angularjs/angular.d.ts",
+        "typings/highcharts-ng/highcharts-ng.d.ts",
+        "typings/highcharts/highcharts_adapter.d.ts",
+        "typings/highcharts/highcharts.d.ts",
+        "typings/jquery/jquery.d.ts",
+        "typings/lodash/lodash.d.ts",
+        "typings/moment/moment-node.d.ts",
+        "typings/moment/moment.d.ts",
+        "typings/toastr/toastr.d.ts",
+        "typings/tsd.d.ts"
+    ]
+}

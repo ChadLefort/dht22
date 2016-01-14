@@ -1,0 +1,38 @@
+<div class="col-md-8">
+  <div class="card">
+    <div class="card-block">
+      <highchart config="dht.chart" id="chart1"></highchart>
+    </div>
+  </div>
+</div>
+<div class="col-md-4">
+  <div class="card">
+    <div class="card-header card-head-dht">
+      Detail
+    </div>
+    <div class="card-block">
+      <div class="table-responsive">
+        <table class="table table-hover table-sm">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Fahrenheit</th>
+              <th>Celsius</th>
+              <th>Humidity</th>
+              <th>Created At</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr ng-repeat="temperature in dht.temperatures | limitTo: 20">
+              <th scope="row">{{$index + 1 % 20}}</th>
+              <td>{{temperature.fahrenheit}}</td>
+              <td>{{temperature.celsius}}</td>
+              <td>{{temperature.humidity}}</td>
+              <td>{{temperature.createdAt}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
