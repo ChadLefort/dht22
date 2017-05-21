@@ -3,7 +3,7 @@ import {Dht} from '../models/dht-model';
 export class DhtService {
   static $inject = ['$http', '$timeout'];
 
-  serviceRoot: string = 'http://piglet-bbb:1337/api';
+  serviceRoot: string = 'http://192.168.86.50:1337/api';
 
   constructor(private $http: ng.IHttpService, private $timeout: ng.ITimeoutService) {
   }
